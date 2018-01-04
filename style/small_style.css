@@ -1,0 +1,68 @@
+/* ==================== RESPONSIVE 720 
+            HEADER - SLIDE CAPTION - CONTACT ==================== */
+@media all and (max-width:720px){
+    /* ==== HEADER ==== */
+    header canvas{
+        display: none;
+    }
+    header nav a{
+        font-size: 1.3rem;
+    }
+    
+    /* ==== PAGES ==== */
+    div.slide_legend{
+        bottom: 50%;
+    }
+    div.reception img[src*="sale_sucre.jpg"]{
+        display: none;
+    }
+    
+    /* CONTACT */
+    #contact{
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 1rem;
+    }
+    /*#mailto*/
+    #mailto{
+        margin: .5rem;
+    }
+    #mailto h3{
+        font-size: 1.4rem;
+    }
+    #mailto p{
+        line-height: 1.5rem;
+    }
+    #mailto img{
+        display: none;
+    }
+    /*FORM*/
+    #contact form{
+        margin: .5rem;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+    #contact form *{
+        font-size: 1rem;
+    }
+    #contact form label input{
+        width: 95%;
+    }
+    #contact form label input,
+    #contact form label textarea{
+        padding: .3rem 0;
+        margin: .3rem auto;
+        padding-left: 1rem;
+    }
+    #contact form label textarea{
+        width: 95%;
+    }
+    #contact form input[type="submit"]{
+        align-self:center;
+        padding: .6rem 1rem;
+        margin-top: 1.4rem;
+    }
+    
+}

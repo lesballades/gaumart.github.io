@@ -1,0 +1,149 @@
+html, body{
+    width: 100%;
+    height: 95%;
+    margin: 0; padding: 0;
+}
+html{
+    font-size: 16px;
+    font-size: 62,5%;
+}
+body{
+    font-size: 14px;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    font-family: monospace;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+header{
+    text-align: center;
+    font-size: 2.5rem;
+    font-variant-caps: small-caps;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 0 0 2px black,
+        1px 1px 5px orangered;
+}
+/*LOGOUT*/
+header form{
+    width: 10%;
+    position: absolute;
+    top: .2rem;
+    left: 2%;
+}
+
+/* INPUT */
+input[type="submit"]{
+    font-variant: small-caps;
+    font-size: 1.2rem;
+    padding: .5rem;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+/* LOGIN */
+form#log{
+    margin-top: 5rem;
+}
+fieldset{
+    width: 60%;
+    margin: auto;
+}
+/*date*/
+.column:nth-child(1){
+    color: orangered;
+    font-weight: 600;
+}
+/* row */
+.row{
+    border: 1px solid black;
+    width: 90%;
+    margin: auto;
+    display: table;
+}
+.column.header{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+    background-color: rgba(255,69,0,.5);
+}
+/* column float*/
+.column{
+    box-sizing: border-box;
+    padding: 1.5rem;
+    width: 20%;
+    float: left;
+}
+.column:nth-child(4){
+    width: 30%;
+}
+.column:nth-child(5){
+    width: 10%;
+}
+.column>*{
+    vertical-align: middle;
+}
+/* clear float */
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive column */
+@media all and (max-width: 1580px){
+    .column.header:nth-child(4),
+    .column.header:nth-child(5){
+        display: none;
+    }
+    .column{padding: .6rem;}
+    .column:nth-child(1),
+    .column:nth-child(2),
+    .column:nth-child(3){
+        width: 33.33%;
+    }
+    .column:nth-child(4){
+        width: 85%;
+        box-shadow: 0 0 10px inset orangered;
+    }
+    .column:nth-child(5){width: 15%;}
+}
+
+@media all and (max-width: 720px){
+    h1{
+        margin: 2rem;
+    }
+    .column.header{
+        display: none;
+    }
+    .column{padding: .5rem;}
+    .column:nth-child(1),
+    .column:nth-child(4),
+    .column:nth-child(5){
+        width: 100%;
+    }
+    .column:nth-child(2),
+    .column:nth-child(3){
+        width: 50%;
+    }
+    .column:nth-child(4){box-shadow: 0 0 10px inset orangered;}
+}
+
+@media all and (max-width: 500px){
+    header{
+       font-size: 1.5rem; 
+    }
+    header h1{
+        margin-top: 15%;
+    }
+    .column>*{width: 100%;}
+    .column:nth-child(2),
+    .column:nth-child(3){
+        width: 100%;
+    }
+}

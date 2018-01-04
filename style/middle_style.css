@@ -1,0 +1,85 @@
+
+/* ==================== RESPONSIVE 1320 SLIDE CAPTION & FLEX CONTACT ==================== */
+@media all and (max-width:1320px){
+    div.slide_legend{
+        bottom: 40%;
+    }
+    /* ==== CONTACT ==== */
+    #mailto{
+        flex: 1;
+        margin: 1rem 3rem;
+    }
+    #mailto p{
+        font-size: 1.6rem;
+    }
+    #mailto img{
+        height: auto;
+        width: 95%;
+    }
+    #contact form{
+        flex: 2;
+    }
+}
+
+/* ==================== RESPONSIVE 1280 font-size ==================== */
+@media all and (max-width:1280px){
+    /* ==== MENU ITEMS==== */
+    header nav a{
+        font-size: 1.7rem;
+    }
+    /* ==== FOOTER ==== */
+    footer h3{
+        font-size: 1.7rem;
+    }
+    footer p{
+        font-size: 1.2rem;
+    }
+    /* ==== CONTACT ==== */
+    #contact form *{
+        font-size: 1.2rem;
+    }
+    #contact form label input,
+    #contact form label textarea{
+    padding: .6rem 0 .6rem 2rem;
+}
+
+/* ==================== RESPONSIVE 1024 ==================== */
+@media all and (max-width:1024px){
+    /* ==== CANVAS ==== */
+    header canvas{
+        top: 12%;
+    }
+    
+    /* ==== PAGES ==== */
+    .reception{
+        flex-wrap: wrap;
+    }
+    .reception img{
+        min-width: 330px;
+    }
+    div.reception aside{
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    div.reception aside img:nth-child(1){
+        padding-right: 2%;
+        flex: 1;
+        width: 45%;
+    }
+    div.reception aside img:nth-child(2){
+        padding-right: 2%;
+        flex: 1;
+        width: 45%;
+    }
+    
+    /* ==== CONTACT ==== */
+    #mailto{
+        flex: 1;
+        text-align: center;
+    }
+    #contact form{
+        flex: 1;
+    }
+}

@@ -1,0 +1,110 @@
+/* ==================== RESPONSIVE 560 
+                RESPONSIVE MENU ==================== */
+@media all and (max-width:560px){
+    /*cache tout les éléments du menu sauf le logo*/
+    #menu a:not(:nth-child(3)){
+        display: none;
+    }
+    #menu a #logo{
+        display: block;
+        width: auto;
+        margin: auto;
+        height: 80px;
+    }
+    #menu a.icon{
+        display: block;
+        font-size: 2rem;
+        align-self: flex-start;
+        float: right;
+    }
+    /*Responsive class add avec javascript*/
+    #menu.responsive{
+        position: relative;
+        
+    }
+    #menu.responsive a.icon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #menu.responsive a{
+        display: block;
+        text-align: left;
+    }
+    nav.responsive{
+        flex-flow: column nowrap;
+    }
+    /*CANVAS*/
+    header canvas{
+        display: block;
+        top: 40px;
+    }
+    canvas#Line1{
+        width: 36%
+    }
+}
+
+/* ==================== RESPONSIVE 414 ==================== */
+@media all and (max-width:414px){
+    /*SLIDE*/
+    div.slide_legend{
+        bottom: 58%;
+    }
+    div.slide_legend h3{
+        font-size: 1.4rem;
+    }
+    div.slide_legend h4{
+        font-size: 1.2rem;
+    }
+    div.slide_legend p{
+        font-size: 1rem;
+    }
+
+    /*CONTENT PAGE*/
+    .reception{
+        flex-flow: row wrap;
+        align-content: center;
+    }
+    .reception section{
+        flex: 1;
+    }
+    div.reception img{
+        width: 45%;
+    }
+    div.reception article{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    
+    div.reception article h2{
+        font-size: 1.4rem;
+    }
+    div.reception article h3{
+        font-size: 1rem;   
+    }
+    div.reception aside{
+        flex-flow: column nowrap;
+        flex: 1;
+    }
+    div.reception img[src*="sale_sucre.jpg"]{
+        display: block;
+        margin-top: 1rem;
+        padding: 9%;
+        height: auto;
+        align-self: center;
+        flex: 1;
+    }
+    div.reception aside img:nth-child(1),
+    div.reception aside img:nth-child(2){
+        padding-right: 0;
+    }
+    
+    /*FOOTER*/
+    footer h3{
+        font-size: 1.2rem;
+    }
+    footer p{
+        font-size: 1rem
+    }
+    
+}
